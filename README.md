@@ -1,7 +1,7 @@
 # vue-drag-verify [![NPM version](https://img.shields.io/npm/v/vue-drag-verify.svg)](https://www.npmjs.com/package/vue-drag-verify)
 
 > This is a vue component, which is sliding to unlock for login or sign up. This is used to protect your web app from bot attack.
-[demo]()
+[demo](https://ashleylv.github.io/vue-drag-verify/)
 
 ## Installation
 
