@@ -55,7 +55,7 @@ handlerBg|String|#fff|The background color of the handler
 textSize|String|20px|Font size of prompt message
 
 
-##Event
+## Event
 
-###passcallback
+### passcallback
 Emitted when pass verify, the handler dragged to the right side.
