@@ -26,7 +26,7 @@
 		},
 		text:{
 			type:String,
-			default:'swipe'
+			default:'swiping to the right side'
 		},
 		successText:{
 			type:String,
@@ -42,7 +42,7 @@
 		},
 		completedBg:{
 			type:String,
-			default:'rgb(102, 204, 102)'
+			default:'#66cc66'
 		},
 		circle:{
 			type:Boolean,
@@ -58,6 +58,10 @@
 		handlerBg:{
 			type:String,
 			default:'#fff'
+		},
+		textSize:{
+			type:String,
+			default:'20px'
 		}
 
 	},
@@ -93,7 +97,8 @@
 		textStyle: function(){
 			return {
 				height : this.height+'px',
-				width : this.width + 'px'
+				width : this.width + 'px',
+				fontSize:this.textSize
 			}
 		},
 		handlerIconClass: function(){

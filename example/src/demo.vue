@@ -3,13 +3,13 @@
   <div class="content">
     <section class="head">
       <h1>Vue drag Verify</h1>
-      <h3>This is a vue component, which is sliding to unlock some functionalities, such as login or sign up. This is used to protect your web app from attack.</h3>
+      <h3>This is a vue component, which is sliding to unlock for login or sign up. This is used to protect your web app from bot attack.</h3>
 
     </section>
     
     <section class="demo-section">
     <div class="column">
-      <drag-verify :width="400" :handler-icon="handlerIcon" :success-icon="successIcon"></drag-verify>
+      <drag-verify :width="width" :height="height" :text="text" :success-text="successText" :background="background" :progress-bar-bg="progressBarBg" :completed-bg="completedBg" :handler-bg="handlerBg" :handler-icon="handlerIcon" :text-size="textSize" :success-icon="successIcon" :circle="getShape"></drag-verify>
     </div>
       
       <div class="column">
@@ -17,49 +17,64 @@
       <tr>
           <td>width</td>
           <td>
-            <input type="text">
+            <input type="text" v-model="width">
           </td>
         </tr>
         <tr>
           <td>height</td>
           <td>
-            <input type="text">
+            <input type="text" v-model="height">
           </td>
         </tr>
         <tr>
           <td>text</td>
           <td>
-           <input type="text">
+           <input type="text" v-model="text">
           </td>
         </tr>
          <tr>
           <td>successText</td>
           <td>
-           <input type="text">
+           <input type="text" v-model="successText">
           </td>
         </tr>
         <tr>
           <td>background</td>
           <td>
-           <input type="color" >
+           <input type="color" v-model="background">
           </td>
         </tr>
         <tr>
           <td>progressBarBg</td>
           <td>
-           <input type="color" >
+           <input type="color" v-model="progressBarBg">
           </td>
         </tr>
         <tr>
           <td>completedBg</td>
           <td>
-           <input type="color" >
+           <input type="color" v-model="completedBg">
+          </td>
+        </tr>
+        <tr>
+          <td>handlerBg</td>
+          <td>
+           <input type="color" v-model="handlerBg">
           </td>
         </tr>
          <tr>
-          <td>handlerWidth</td>
+          <td>textSize</td>
           <td>
-            <input type="text">
+            <input type="text" v-model="textSize">
+          </td>
+        </tr>
+         <tr>
+          <td>isCircle</td>
+          <td>
+            <select v-model="isCircle">
+              <option>true</option>
+              <option>false</option>
+            </select>
           </td>
         </tr>
 
@@ -74,7 +89,7 @@
 </template>
 
 <script>
-import dragVerify from './dragVerify.vue'
+import dragVerify from '../../dist'
 export default {
   name: 'app',
   components:{
@@ -83,7 +98,22 @@ export default {
   data () {
     return {
       handlerIcon:'fa fa-angle-double-right',
-      successIcon:'fa fa-check'
+      successIcon:'fa fa-check',
+      background:'#cccccc',
+      progressBarBg:'#FFFF99',
+      completedBg:'#66cc66',
+      handlerBg:'#fff',
+      text:'swiping to the right side',
+      successText:'success',
+      width:400,
+      height:60,
+      textSize:'20px',
+      isCircle:'true'
+    }
+  },
+  computed:{
+    getShape(){
+      return this.isCircle==='true'
     }
   }
 }
