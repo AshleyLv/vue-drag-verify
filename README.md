@@ -47,9 +47,9 @@ successText|String|success|The text shows when it’s successful
 background|String|#ccc|The background color of the component
 color|String|#ffffff|The color of the text
 progressBarBg|String|#FFFF99|The backgound color of the progress bar
-completedBg|String|#66cc66|The backgound color of the component when the button dragging to the right side
+completedBg|String|#66cc66|The backgound color of the component when the button dragged to the right side
 circle|Boolean|true|If true, the shape of component is round
-handlerIcon|String|-|The icon of hadler
-successIcon|String|-|The icon of handler when the button dragging to the right side
+handlerIcon|String|-|The icon of handler
+successIcon|String|-|The icon of handler when the button dragged to the right side
 handlerBg|String|#fff|The background color of the handler
 textSize|String|20px|Font size of prompt message
