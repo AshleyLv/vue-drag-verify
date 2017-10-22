@@ -40,16 +40,16 @@ export default {
 
 Property|Type|Default|Description
 ---|---|---|---
-width|Number|200|The width of component
-height|Number|60|The height of component
+width|Number|200|The width of the component
+height|Number|60|The height of the component
 text|String|swiping to the right side|The text shows on the component
-successText|String|success|The text shows when 
+successText|String|success|The text shows when it’s successful
 background|String|#ccc|The background color of the component
-color|String|#ffffff|The color of quick menu icon
+color|String|#ffffff|The color of the text
 progressBarBg|String|#FFFF99|The backgound color of the progress bar
 completedBg|String|#66cc66|The backgound color of the component when the button dragging to the right side
-circle|Boolean|true|If true, the shape of component is circle
-handlerIcon|String|-|The icon of hardler
-successIcon|String|-|The icon of hardler when the button dragging to the right side
+circle|Boolean|true|If true, the shape of component is round
+handlerIcon|String|-|The icon of hadler
+successIcon|String|-|The icon of handler when the button dragging to the right side
 handlerBg|String|#fff|The background color of the handler
-textSize|String|20px|The size of component text
+textSize|String|20px|Font size of prompt message
