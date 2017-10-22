@@ -53,3 +53,9 @@ handlerIcon|String|-|The icon of handler
 successIcon|String|-|The icon of handler when the button dragged to the right side
 handlerBg|String|#fff|The background color of the handler
 textSize|String|20px|Font size of prompt message
+
+
+##Event
+
+###passcallback
+Emitted when pass verify, the handler dragged to the right side.
