@@ -11,18 +11,20 @@
 
 ## Usage
 ``` xml
-<drag-verify :width="width" 
-			 :height="height" 
-			 :text="text" 
-			 :success-text="successText" 
-			 :background="background" 
-			 :progress-bar-bg="progressBarBg" 
-			 :completed-bg="completedBg" 
-			 :handler-bg="handlerBg" 
-			 :handler-icon="handlerIcon" 
-			 :text-size="textSize" 
-			 :success-icon="successIcon" 
-			 :circle="getShape"></drag-verify>
+<drag-verify 
+  :width="width" 
+  :height="height" 
+  :text="text" 
+  :success-text="successText" 
+  :background="background" 
+  :progress-bar-bg="progressBarBg" 
+  :completed-bg="completedBg" 
+  :handler-bg="handlerBg" 
+  :handler-icon="handlerIcon" 
+  :text-size="textSize" 
+  :success-icon="successIcon" 
+  :circle="getShape"
+></drag-verify>
 ```
 
 ``` javascript
@@ -59,3 +61,9 @@ textSize|String|20px|Font size of prompt message
 
 ### passcallback
 Emitted when pass verify, the handler dragged to the right side.
+
+# Update
+2019/8/16
+> 增加了 e.preventDefault() 来阻止浏览器对当前事件的默认响应
+> 
+> Add e.preventDefault() to prevent default browser response to current events
