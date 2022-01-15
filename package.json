@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "shelljs": "^0.7.8",
+    "shelljs": "^0.8.5",
     "vue": "^2.3.3"
   },
   "devDependencies": {
