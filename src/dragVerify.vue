@@ -134,9 +134,11 @@
             	var handler = this.$refs.handler;
                 if(_x > 0 && _x <= (this.width-this.height)){
                     handler.style.left = _x + 'px';
+					this.$set(this.handlerStyle, "left", handler.style.left);
                     this.$refs.progressBar.style.width = (_x+this.height/2)+'px';
                 }else if(_x > (this.width-this.height)){  
                 	handler.style.left = (this.width - this.height)+ 'px';
+					this.$set(this.handlerStyle, "left", handler.style.left);
                     this.$refs.progressBar.style.width = (this.width-this.height/2)+'px';
                      this.passVerify();
                 }
